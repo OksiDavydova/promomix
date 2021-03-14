@@ -13,4 +13,11 @@ stores.html -Для магазинов
 restaurants.html -Для кафе и ресторанов
 posts.html Статьи и новости / Собственный стиль в печати на футболках
 
-??? картинки на странице polygraphy.html
+1. ??? картинки на странице polygraphy.html st 79 background
+
+2. - catalogs.html st 91 inside picture
+
+2.1 Collapsible??? выпадаюший текст каталог
+https://www.w3schools.com/howto/howto_js_collapsible.asp посмотреть пример
+
+каталог -259 строчка
