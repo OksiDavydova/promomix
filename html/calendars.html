@@ -4,6 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .collapsible {
+        background-color: rgb(167, 161, 161);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+      }
+
+      .collapsible:after {
+        content: "\002B";
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+    </style>
     <title>promomix</title>
   </head>
   <body>
@@ -17,7 +55,359 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section>
+        <ul>
+          <li>
+            <a href="/">
+              <img src="../images/features/bxl1.jpg" alt="реклама" width="40" />
+              <p>Наружная реклама</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="../images/features/bxl2.jpg" alt="печать" width="40" />
+              <p>Широкоформатная печать</p>
+            </a>
+          </li>
+          <li>
+            <a href="./polygraphy.html">
+              <img src="../images/features/bxl3.jpg" alt="полиграфия" width="40" />
+              <p>Рекламная полиграфия</p>
+            </a>
+          </li>
+          <li>
+            <a href="./features.html">
+              <img src="../images/features/bxl4.jpg" alt="продукция" width="40" />
+              <p>Сувенирная продукция</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="../images/features/bxl5.jpg" alt="реклама" width="40" />
+              <p>Внутренняя реклама</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="../images/features/bxl6.jpg" alt="Гравировка и резка" width="40" />
+              <p>Гравировка и резка</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="../images/features/bxl7.jpg" alt="Брендирование одежды" width="40" />
+              <p>Брендирование одежды</p>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="../images/features/bxl8.jpg" alt="Брендирование транспорта" width="40" />
+              <p>Брендирование транспорта</p>
+            </a>
+          </li>
+        </ul>
+      </section>
 
+      <div>
+        <h1>Листовки и флаеры</h1>
+        <p>
+          Листовка или флаер - это эффективный инструмент для развития бизнеса. Яркий дизайн и качественная печать привлекут внимание потребителя.
+        </p>
+        <img src="../images/flyers/flyers.jpg" alt="картинка с флаерами" width="1400" height="675" />
+      </div>
+
+      <section>
+        <h2>Виды листовок</h2>
+        <p>
+          Мы стараемся быть ближе к своим клиентам и поэтому производим не только стандартные размеры листовок и флаеров, но и любого другого
+          необходимого вам формата. Кроме этого мы можем предложить вам широчайший выбор качественной дизайнерской бумаги и картона.
+        </p>
+        <div>
+          <ul>
+            <li>
+              <img src="../images/flyers/a4.jpg" alt="format - a4" width="210" height="297" />
+              <p>A4 | 297 x 210 мм</p>
+            </li>
+            <li>
+              <img src="../images/flyers/a5.jpg" alt="format - a5" width="148" height="210" />
+              <p>A5 | 210 x 148 мм</p>
+            </li>
+            <li>
+              <img src="../images/flyers/98-210main.jpg" alt="size 98x210" width="98" height="210" />
+              <img src="../images/flyers/98-210.jpg" alt="text" width="48" height="81" />
+              <p>98 x 210 мм</p>
+            </li>
+            <li>
+              <img src="../images/flyers/a6.jpg" alt="format - a6" width="105" height="148" />
+              <p>A6 | 148 x 105 мм</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Узнайте стоимость</h2>
+        <div>
+          <ul>
+            <li><a href="/">Цифровая печать</a></li>
+            <li><a href="/">Офсетная печать</a></li>
+            <li><a href="/">Дизайн</a></li>
+          </ul>
+        </div>
+
+        <label for="paper">paper</label>
+        <select id="paper" name="paper">
+          <option value="D" selected>тонкая бумага 130 г/м2</option>
+          <option value="D">плотная бумага 150г/м2</option>
+          <option value="E">для печати календарей-170г/м2</option>
+          <option value="F">для блока -200г/м2</option>
+          <option value="F">250г/м2</option>
+          <option value="G">300г/м2</option>
+        </select>
+        <span>Срок печати цифровым способом 1 - 2 дня</span>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Формат / Цвет</th>
+              <th>50 шт</th>
+              <th>100 шт</th>
+              <th>200 шт</th>
+              <th>300 шт</th>
+              <th>400 шт</th>
+              <th>500 шт</th>
+              <th>600 шт</th>
+              <th>800 шт</th>
+              <th>1000 шт</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>А7 / 4+0</td>
+              <td>460 ₽</td>
+              <td>580 ₽</td>
+              <td>800 ₽</td>
+              <td>990 ₽</td>
+              <td>1200 ₽</td>
+              <td>1400 ₽</td>
+              <td>1520 ₽</td>
+              <td>1920 ₽</td>
+              <td>2200 ₽</td>
+            </tr>
+            <tr>
+              <td>А7 / 4+4</td>
+              <td>460 ₽</td>
+              <td>580 ₽</td>
+              <td>800 ₽</td>
+              <td>990 ₽</td>
+              <td>1200 ₽</td>
+              <td>1400 ₽</td>
+              <td>1520 ₽</td>
+              <td>1920 ₽</td>
+              <td>2200 ₽</td>
+            </tr>
+            <tr>
+              <td>А6 / 4+0</td>
+              <td>460 ₽</td>
+              <td>580 ₽</td>
+              <td>800 ₽</td>
+              <td>990 ₽</td>
+              <td>1200 ₽</td>
+              <td>1400 ₽</td>
+              <td>1520 ₽</td>
+              <td>1920 ₽</td>
+              <td>2200 ₽</td>
+            </tr>
+            <tr>
+              <td>А6 / 4+4</td>
+              <td>460 ₽</td>
+              <td>580 ₽</td>
+              <td>800 ₽</td>
+              <td>990 ₽</td>
+              <td>1200 ₽</td>
+              <td>1400 ₽</td>
+              <td>1520 ₽</td>
+              <td>1920 ₽</td>
+              <td>2200 ₽</td>
+            </tr>
+            <tr>
+              <td>98х210 / 4+0</td>
+              <td>460 ₽</td>
+              <td>580 ₽</td>
+              <td>800 ₽</td>
+              <td>990 ₽</td>
+              <td>1200 ₽</td>
+              <td>1400 ₽</td>
+              <td>1520 ₽</td>
+              <td>1920 ₽</td>
+              <td>2200 ₽</td>
+            </tr>
+            <tr>
+              <td>98х210 / 4+4</td>
+              <td>460 ₽</td>
+              <td>580 ₽</td>
+              <td>800 ₽</td>
+              <td>990 ₽</td>
+              <td>1200 ₽</td>
+              <td>1400 ₽</td>
+              <td>1520 ₽</td>
+              <td>1920 ₽</td>
+              <td>2200 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Collapsible ?????-->
+
+      <h2>Дополнительные услуги</h2>
+
+      <button class="collapsible">Ламинация</button>
+      <div class="content">
+        <img src="../images/catalog-img/catalog-img3.jpg" alt="Ламинация" />
+        <p>
+          Ламинация (ламинирование) — технология, которая представляет собой покрытие изделий прозрачной пленкой. Основная цель ламинирования
+          заключается в обеспечении защиты продукций от факторов внешней среды. Кроме того, технология известна как один из видов декоративной
+          обработки, применяемый для усиления светового эффекта, а также для придания более яркого вида изображению.
+        </p>
+        <a href="/">прайс - лист</a>
+      </div>
+      <button class="collapsible">Вырубка</button>
+      <div class="content">
+        <p>
+          Ламинация (ламинирование) — технология, которая представляет собой покрытие изделий прозрачной пленкой. Основная цель ламинирования
+          заключается в обеспечении защиты продукций от факторов внешней среды. Кроме того, технология известна как один из видов декоративной
+          обработки, применяемый для усиления светового эффекта, а также для придания более яркого вида изображению.
+        </p>
+      </div>
+      <button class="collapsible">УФ печать</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Тиснение</button>
+      <div class="content">
+        <img src="../images/catalog-img/catalog-img2.jpg" alt="Тиснение" width="570" height="320" />
+        <p>
+          Тиснение — полиграфический процесс, относящийся к послепечатной отделке продукции, производящийся на ручных, полуавтоматических и
+          автоматических прессах для тиснения, основанный на припрессовке горячим или холодным способом металлизированной или пигментной фольги или
+          полимерной плёнки с напылением нужного вещества для улучшения привлекательности упаковки, этикетки или рекламно- акцидентной продукции.
+        </p>
+        <a href="">прайс - лист</a>
+      </div>
+      <button class="collapsible">Допечатная подготовка</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Цветопроба</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Вклейка окошек</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Персонализация</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Плоттерная резка и гравировка</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+
+      <section>
+        <h2>Наши работы</h2>
+        <ul>
+          <li>
+            <div><img src="../images/works/w1.jpg" alt="вывеска" width="360" height="270" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w2.jpg" alt="вывеска" width="360" height="360" /></div>
+            <h3>Bio бутик Flora</h3>
+            <p>наружная реклама</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w3.jpg" alt="вывеска" width="360" height="270" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w4.jpg" alt="вывеска" width="360" height="360" /></div>
+            <h3>Сеть ресторанов Emosi</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w5.jpg" alt="вывеска" width="360" height="270" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w6.jpg" alt="вывеска" width="360" height="360" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+        </ul>
+
+        <!--our works-->
+        <button type="button">все работы</button>
+      </section>
+
+      <section>
+        <h2>Заявка</h2>
+        <p>Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время</p>
+      </section>
+      <section>
+        <form>
+          <input type="name" placeholder="Имя" />
+          <input type="tel" placeholder="Телефон" />
+          <input type="text" placeholder="Комментарий к заявке" />
+          <input type="e-mail" placeholder="Ваш e-mail" />
+          <!--<input type="submit" placeholder="&#8594;">-->
+          <button type="submit">отправить</button>
+          <span>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</span>
+        </form>
+      </section>
+
+      <a href="/"><span>Следующая услуга</span><span>Упаковка</span>&#8594;</a>
+    </main>
     <footer>
       <div>
         <div>
@@ -27,25 +417,25 @@
         <nav>
           <ul>
             <li>
-              <a href="../html/obout.html">О компании</a>
+              <a href="./html/obout.html">О компании</a>
             </li>
             <li>
-              <a href="../html/features.html">Услуги</a>
+              <a href="./html/features.html">Услуги</a>
             </li>
             <li>
-              <a href="/">Наши работы</a>
+              <a href="./works.html">Наши работы</a>
             </li>
             <li>
-              <a href="../html/services.html">Сервис</a>
+              <a href="./html/services.html">Сервис</a>
             </li>
             <li>
-              <a href="../html/complex.html">Комплексные решения</a>
+              <a href="./html/complex.html">Комплексные решения</a>
             </li>
             <li>
-              <a href="../html/stores.html">Статьи и новости</a>
+              <a href="./html/stores.html">Статьи и новости</a>
             </li>
             <li>
-              <a href="../html/kontact.html">Контакты</a>
+              <a href="./html/kontact.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -62,9 +452,9 @@
       <div>
         <p>&copy;2011 - 2020 Promomix</p>
         <ul>
-          <li><a href=""></a>facebook</li>
-          <li><a href=""></a>VKontacte</li>
-          <li><a href=""></a>indtagram</li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a>facebook</li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a>VKontacte</li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a>indtagram</li>
         </ul>
       </div>
     </footer>

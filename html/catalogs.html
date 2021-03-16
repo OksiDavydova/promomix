@@ -4,7 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/stuly.css" />
+    <style>
+      .collapsible {
+        background-color: rgb(167, 161, 161);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+      }
+
+      .collapsible:after {
+        content: "\002B";
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+    </style>
 
     <title>catalogs</title>
   </head>
@@ -251,34 +288,133 @@
           </tbody>
         </table>
       </section>
-      <section>
-        <h2>Дополнительные услуги</h2>
 
-        <!-- Collapsible ?????-->
+      <!-- Collapsible ?????-->
 
-        
+      <h2>Дополнительные услуги</h2>
 
-        <img src="../images/catalog-img/catalog-img2.jpg" alt="" width="570" height="320" />
-       
-
-
-    
-        <section>
-          <h2>Заявка</h2>
-          <p>Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время</p>
-        </section>
-        <section>
-          <form>
-            <input type="name" placeholder="Имя" />
-            <input type="tel" placeholder="Телефон" />
-            <input type="text" placeholder="Комментарий к заявке" />
-            <input type="e-mail" placeholder="Ваш e-mail" />
-            <!--<input type="submit" placeholder="&#8594;">-->
-            <button type="submit">отправить</button>
-            <span>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</span>
-          </form>
-        </section>
+      <button class="collapsible">Ламинация</button>
+      <div class="content">
+        <img src="../images/catalog-img/catalog-img3.jpg" alt="иснение" />
+        <p>
+          Ламинация (ламинирование) — технология, которая представляет собой покрытие изделий прозрачной пленкой. Основная цель ламинирования
+          заключается в обеспечении защиты продукций от факторов внешней среды. Кроме того, технология известна как один из видов декоративной
+          обработки, применяемый для усиления светового эффекта, а также для придания более яркого вида изображению.
+        </p>
+        <a href="">прайс - лист</a>
       </div>
+      <button class="collapsible">УФ печать</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Тиснение</button>
+      <div class="content">
+        <img src="../images/catalog-img/catalog-img2.jpg" alt="" width="570" height="320" />
+        <p>
+          Тиснение — полиграфический процесс, относящийся к послепечатной отделке продукции, производящийся на ручных, полуавтоматических и
+          автоматических прессах для тиснения, основанный на припрессовке горячим или холодным способом металлизированной или пигментной фольги или
+          полимерной плёнки с напылением нужного вещества для улучшения привлекательности упаковки, этикетки или рекламно- акцидентной продукции.
+        </p>
+        <a href="">прайс - лист</a>
+      </div>
+      <button class="collapsible">Допечатная подготовка</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Цветопроба</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <button class="collapsible">Персонализация</button>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+
+      <section>
+        <h2>Наши работы</h2>
+        <ul>
+          <li>
+            <div><img src="../images/works/w1.jpg" alt="вывеска" width="360" height="270" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w2.jpg" alt="вывеска" width="360" height="360" /></div>
+            <h3>Bio бутик Flora</h3>
+            <p>наружная реклама</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w3.jpg" alt="вывеска" width="360" height="270" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w4.jpg" alt="вывеска" width="360" height="360" /></div>
+            <h3>Сеть ресторанов Emosi</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w5.jpg" alt="вывеска" width="360" height="270" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li>
+            <div><img src="../images/works/w6.jpg" alt="вывеска" width="360" height="360" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+        </ul>
+
+        <!--our works-->
+        <button type="button">все работы</button>
+      </section>
+
+      <section>
+        <h2>Заявка</h2>
+        <p>Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время</p>
+      </section>
+      <section>
+        <form>
+          <input type="name" placeholder="Имя" />
+          <input type="tel" placeholder="Телефон" />
+          <input type="text" placeholder="Комментарий к заявке" />
+          <input type="e-mail" placeholder="Ваш e-mail" />
+          <!--<input type="submit" placeholder="&#8594;">-->
+          <button type="submit">отправить</button>
+          <span>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</span>
+        </form>
+      </section>
+
+      <a href="./flyers.html"><span>Следующая услуга</span><span>Открытки</span>&#8594;</a>
     </main>
     <footer>
       <div>
