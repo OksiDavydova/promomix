@@ -4,167 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>promomix</title>
   </head>
   <body>
-    <header class="head">
-      <div class="container">
-        <a href="/"><img src="./images/title.jpg" alt="" /></a>
-        <nav class="navigation">
-          <ul class="list">
-            <li class="list-item"><button type="button">поиск</button></li>
-            <li class="list-item"><a href="tel:84964290900" class="link">8 496 429 09 00</a></li>
-            <li class="list-item"><button type="button">оставить заявку</button></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header" id="header">
+      <nav class="navigation container">
+        <a href="/" class="logo"><img src="./images/logo.jpg" alt="" /></a>
+        <ul class="list">
+          <li class="list-item"><img src="./icon/bx-search.svg.svg" alt="" /><button type="button">поиск</button></li>
+          <li class="list-item"><a href="tel:84964290900" class="link">8 496 429 09 00</a></li>
+          <li class="list-item"><button type="button">оставить заявку</button></li>
+        </ul>
+      </nav>
     </header>
-
-    <section>
-      <h1>
-        Promomix – <br />
-        рекламное агентство <br />
-        полного цикла
-      </h1>
-      <ul>
-        <li><a href="" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
-        <li><a href="" target="_blank" rel="noopener noreferrer"></a>Vkontakte</li>
-        <li><a href="" target="_blank" rel="noopener noreferrer"></a>Twitter</li>
-      </ul>
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Promomix – <br />
+          рекламное агентство <br />
+          полного цикла
+        </h1>
+        <ul class="social-list list">
+          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
+          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Vkontakte</li>
+          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Twitter</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <p>услуги</p>
-      <h2>Ключевые направления</h2>
-      <ul>
-        <li>
-          <a href="/">
-            <img src="./images/features/bxl1.jpg" alt="" width="70" height="70" />
-            Наружная реклама</a
-          >
-        </li>
-        <li>
-          <a href="/">
-            <img src="./images/features/bxl2.jpg" alt="" width="70" height="70" />
-            Широкоформатная печать</a
-          >
-        </li>
-        <li>
-          <a href="./html/polygraphy.html">
-            <img src="./images/features/bxl3.jpg" alt="" width="70" height="70" />
-            Рекламная полиграфия
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="./images/features/bxl4.jpg" alt="" width="70" height="70" />
-            Сувенирная продукция
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="./images/features/bxl5.jpg" alt="" width="70" height="70" />
-            Внутренняя реклама
-          </a>
-        </li>
-        <li>
-          <a href="./html/post-shirts.html">
-            <img src="./images/features/bxl7.jpg" alt="" width="70" height="70" />
-            Брендирование одежды
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="./images/features/bxl8.jpg" alt="" width="70" height="70" />
-            Брендирование транспорта
-          </a>
-        </li>
-        <li>
-          <a href="./html/features.html">
-            <img src="./images/features/all.jpg" alt="стрелка" width="70" height="70" />
-            Все услуги
-          </a>
-        </li>
-      </ul>
+    <section class="features">
+      <div class="container">
+        <p class="little-title">услуги</p>
+        <h2 class="caption">Ключевые <span class="caption-part">направления</span></h2>
+        <ul class="key-areas list">
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="/">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#cod"></use>
+              </svg>
+              <p>Наружная реклама</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="/">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#print"></use>
+              </svg>
+              <p>Широкоформатная печать</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="./html/polygraphy.html">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#copy"></use>
+              </svg>
+              <p>Рекламная полиграфия</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="/">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#cap"></use>
+              </svg>
+              <p>Сувенирная продукция</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="/">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#board"></use>
+              </svg>
+              <p>Внутренняя реклама</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="./html/post-shirts.html">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#shirts"></use>
+              </svg>
+              <p>Брендирование одежды</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="/">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#bus"></use>
+              </svg>
+              <p>Брендирование транспорта</p>
+            </a>
+          </li>
+          <li class="key-areas-item">
+            <a class="key-areas-link" href="./html/features.html">
+              <svg class="icon icon-size">
+                <use href="./icon/icons.svg#arrow"></use>
+              </svg>
+              <p>Все услуги</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <p>Наши преимущества</p>
-      <h2>Создаем рекламу и формируем имидж компаний</h2>
-      <ul>
-        <li>
-          <p>18+</p>
-          <p>лет опыта на рекламном рынке</p>
-        </li>
-        <li>
-          <p>250+</p>
-          <p>реализованных проектов</p>
-        </li>
-        <li>
-          <p>37</p>
-          <p>квалифицированных сотрудников</p>
-        </li>
-        <li>
-          <p>14+</p>
-          <p>профессионального оборудования</p>
-        </li>
-      </ul>
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits-part">
+          <p class="little-title">Наши преимущества</p>
+          <h2 class="caption">
+            <span class="caption-part">Создаем рекламу</span> <br />
+            и формируем имидж компаний
+          </h2>
+        </div>
+
+        <ul class="benefits-list list">
+          <li class="benefits-item">
+            <p class="numbers">18+</p>
+            <p class="text decor-line">лет опыта на рекламном рынке</p>
+          </li>
+          <li class="benefits-item">
+            <p class="numbers">250+</p>
+            <p class="text decor-line">реализованных проектов</p>
+          </li>
+          <li class="benefits-item">
+            <p class="numbers">37</p>
+            <p class="text decor-line">квалифицированных сотрудников</p>
+          </li>
+          <li class="benefits-item">
+            <p class="numbers">14+</p>
+            <p class="text decor-line">профессионального оборудования</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <ul>
-        <li>
-          <div><img src="./images/works/w1.jpg" alt="вывеска" width="570" height="370" /></div>
-          <h3>Кафе Starbucks Coffee</h3>
-          <p>Вывеска объемная</p>
-        </li>
-        <li>
-          <div><img src="./images/works/w2.jpg" alt="вывеска" width="570" height="570" /></div>
-          <h3>Bio бутик Flora</h3>
-          <p>наружная реклама</p>
-        </li>
-        <li>
-          <div><img src="./images/works/w3.jpg" alt="вывеска" width="570" height="370" /></div>
-          <h3>Кафе Starbucks Coffee</h3>
-          <p>Вывеска объемная</p>
-        </li>
-        <li>
-          <div><img src="./images/works/w4.jpg" alt="вывеска" width="570" height="570" /></div>
-          <h3>Сеть ресторанов Emosi</h3>
-          <p>Вывеска объемная</p>
-        </li>
-        <li>
-          <div><img src="./images/works/w5.jpg" alt="вывеска" width="570" height="370" /></div>
-          <h3>Кафе Starbucks Coffee</h3>
-          <p>Вывеска объемная</p>
-        </li>
-        <li>
-          <div><img src="./images/works/w6.jpg" alt="вывеска" width="570" height="570" /></div>
-          <h3>Кафе Starbucks Coffee</h3>
-          <p>Вывеска объемная</p>
-        </li>
-      </ul>
+    <section class="works">
+      <div class="container">
+        <p class="little-title">наши работы</p>
+        <h2 class="caption">Воплощаем <span class="caption-part">идеи</span></h2>
 
-      <!--our works-->
-      <button type="button">все работы</button>
+        <ul class="works-list list">
+          <li class="works-list-item">
+            <img src="./images/works/w1.jpg" alt="вывеска" width="570" height="370" />
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li class="works-list-item">
+            <div><img src="./images/works/w3.jpg" alt="вывеска" width="570" height="370" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li class="works-list-item">
+            <div><img src="./images/works/w6.jpg" alt="вывеска" width="570" height="570" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li class="works-list-item">
+            <div><img src="./images/works/w2.jpg" alt="вывеска" width="570" height="570" /></div>
+            <h3>Bio бутик Flora</h3>
+            <p>наружная реклама</p>
+          </li>
+
+          <li class="works-list-item">
+            <div><img src="./images/works/w4.jpg" alt="вывеска" width="570" height="570" /></div>
+            <h3>Сеть ресторанов Emosi</h3>
+            <p>Вывеска объемная</p>
+          </li>
+          <li class="works-list-item">
+            <div><img src="./images/works/w5.jpg" alt="вывеска" width="570" height="370" /></div>
+            <h3>Кафе Starbucks Coffee</h3>
+            <p>Вывеска объемная</p>
+          </li>
+        </ul>
+
+        <!--our works-->
+        <button type="button">все работы</button>
+      </div>
     </section>
 
-    <section>
-      <p>Наши партнёры</p>
-      <h2>400+ компаний доверяют нам</h2>
-      <ul>
-        <li><img src="./images/brends/logo1.jpg" alt="puma" width="124" height="64" /></li>
-        <li><img src="./images/brends/logo2.jpg" alt="тинькофф" width="134" height="73" /></li>
-        <li><img src="./images/brends/logo3.jpg" alt="ашан" width="113" height="35" /></li>
-        <li><img src="./images/brends/logo4.jpg" alt="lukoil" width="139" height="48" /></li>
-        <li><img src="./images/brends/logo5.jpg" alt="nike" width="100" height="54" /></li>
-        <li><img src="./images/brends/logo6.jpg" alt="zara" width="106" height="45" /></li>
-        <li><img src="./images/brends/logo7.jpg" alt="addidas" width="102" height="68" /></li>
-        <li><img src="./images/brends/logo8.jpg" alt="o'stin" width="153" height="46" /></li>
-        <li><img src="./images/brends/logo9.jpg" alt="назпром" width="124" height="60" /></li>
-      </ul>
+    <section class="partners">
+      <div class="container flexbox">
+        <div class="partners-part">
+          <p class="little-title">Наши партнёры</p>
+          <h2 class="caption">400+ компаний доверяют нам</h2>
+        </div>
+
+        <ul class="partners-list list">
+          <li class="partners-list-item"><img src="./images/brends/logo1.jpg" alt="puma" width="124" height="64" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo2.jpg" alt="тинькофф" width="134" height="73" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo3.jpg" alt="ашан" width="113" height="35" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo4.jpg" alt="lukoil" width="139" height="48" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo5.jpg" alt="nike" width="100" height="54" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo6.jpg" alt="zara" width="106" height="45" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo7.jpg" alt="addidas" width="102" height="68" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo8.jpg" alt="o'stin" width="153" height="46" /></li>
+          <li class="partners-list-item"><img src="./images/brends/logo9.jpg" alt="назпром" width="124" height="60" /></li>
+        </ul>
+      </div>
     </section>
 
     <section>
