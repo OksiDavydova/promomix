@@ -1,13 +1,18 @@
 :root {
+  --main-font: "TT Norms", sans-serif;
+  --main-red: #e52322;
+  --main-grey: #b0b6bf;
+  --main-black: #1f2c37;
+  --main-white: #ffffff;
+  --background-color: #f2f4f7;
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
-  width: 1600px;
 }
 .header {
   background-color: #fff;
@@ -59,7 +64,7 @@ button {
 
 button:hover,
 button:focus {
-  color: red;
+  color: var(--main-red);
 }
 .list-item img {
   margin-right: 12px;
@@ -105,12 +110,12 @@ button:focus {
 }
 
 .hero h1 span {
-  color: red;
+  color: var(--main-red);
   text-transform: capitalize;
 }
 
 .social-list {
-  color: #fff;
+  color: var(--main-white);
   display: flex;
   cursor: pointer;
 }
@@ -124,6 +129,7 @@ button:focus {
   margin-top: 200px;
 }
 .little-title {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.05em;
@@ -148,7 +154,6 @@ button:focus {
 }
 
 .key-areas {
-  border: 0px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -171,7 +176,11 @@ button:focus {
   padding-left: 40px;
   padding-top: 40px;
   padding-bottom: 42px;
-  padding-right: 73px;
+  padding-right: 40px;
+
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.32;
 }
 
 .key-areas-item p {
@@ -216,6 +225,10 @@ button:focus {
 .benefits .list {
   padding-top: 147px;
   padding-bottom: 150px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.57;
 }
 
 .benefits-list .numbers {
@@ -274,6 +287,25 @@ button:focus {
   height: 1908px;
 }
 
+.works-list-item h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.works-list-item p {
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #b0b6bf;
+}
+.work-item-signature {
+  margin-top: 20px;
+}
+
 .works-list-item {
   flex-basis: calc(100% / 3);
   margin-right: 60px;
@@ -286,6 +318,35 @@ button:focus {
 .works-list-item:nth-child(odd) {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.works .button-all {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  background-color: #fff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.line::before {
+  content: "";
+  display: inline-flex;
+  width: 1000px;
+  height: 1px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  background-color: currentColor;
+  margin-right: 48px;
+}
+
+.plus {
+  width: 23px;
+  height: 23px;
+  margin-right: 42px;
 }
 
 /*--------partners--------*/
@@ -320,4 +381,33 @@ button:focus {
 }
 .partners-list-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+/*-------article---------*/
+
+.article {
+  margin-top: 200px;
+}
+
+.article-list-item {
+  display: inline-flex;
+}
+.article-list-item + .article-list-item {
+  margin-top: 60px;
+}
+
+.image-block {
+  display: inline-flex;
+  margin-right: 60px;
+  flex-basis: 50%;
+}
+
+.image-block p {
+  margin-right: 83px;
+}
+
+.desctiption {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
 }

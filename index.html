@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>promomix</title>
@@ -113,7 +114,8 @@
           <p class="little-title">Наши преимущества</p>
           <h2 class="caption">
             <span class="caption-part">Создаем рекламу</span> <br />
-            и формируем имидж компаний
+            и формируем имидж <br />
+            компаний
           </h2>
         </div>
 
@@ -146,39 +148,55 @@
         <ul class="works-list list">
           <li class="works-list-item">
             <img src="./images/works/w1.jpg" alt="вывеска" width="570" height="370" />
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
+            <div class="work-item-signature">
+              <h3>Кафе Starbucks Coffee</h3>
+              <p>Вывеска объемная</p>
+            </div>
           </li>
           <li class="works-list-item">
-            <div><img src="./images/works/w3.jpg" alt="вывеска" width="570" height="370" /></div>
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
+            <img src="./images/works/w3.jpg" alt="вывеска" width="570" height="370" />
+            <div class="work-item-signature">
+              <h3>Кафе Starbucks Coffee</h3>
+              <p>Вывеска объемная</p>
+            </div>
           </li>
           <li class="works-list-item">
-            <div><img src="./images/works/w6.jpg" alt="вывеска" width="570" height="570" /></div>
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
+            <img src="./images/works/w6.jpg" alt="вывеска" width="570" height="570" />
+            <div class="work-item-signature">
+              <h3>Кафе Starbucks Coffee</h3>
+              <p>Вывеска объемная</p>
+            </div>
           </li>
           <li class="works-list-item">
-            <div><img src="./images/works/w2.jpg" alt="вывеска" width="570" height="570" /></div>
-            <h3>Bio бутик Flora</h3>
-            <p>наружная реклама</p>
+            <img src="./images/works/w2.jpg" alt="вывеска" width="570" height="570" />
+            <div class="work-item-signature">
+              <h3>Bio бутик Flora</h3>
+              <p>наружная реклама</p>
+            </div>
           </li>
 
           <li class="works-list-item">
-            <div><img src="./images/works/w4.jpg" alt="вывеска" width="570" height="570" /></div>
-            <h3>Сеть ресторанов Emosi</h3>
-            <p>Вывеска объемная</p>
+            <img src="./images/works/w4.jpg" alt="вывеска" width="570" height="570" />
+            <div class="work-item-signature">
+              <h3>Сеть ресторанов Emosi</h3>
+              <p>Вывеска объемная</p>
+            </div>
           </li>
           <li class="works-list-item">
-            <div><img src="./images/works/w5.jpg" alt="вывеска" width="570" height="370" /></div>
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
+            <img src="./images/works/w5.jpg" alt="вывеска" width="570" height="370" />
+            <div class="work-item-signature">
+              <h3>Кафе Starbucks Coffee</h3>
+              <p>Вывеска объемная</p>
+            </div>
           </li>
         </ul>
 
         <!--our works-->
-        <button type="button">все работы</button>
+        
+        <button class="button-all" type="button">
+          <span class="plus">&#43</span> 
+          <span class="line">все работы</span>
+        </button>
       </div>
     </section>
 
@@ -203,58 +221,62 @@
       </div>
     </section>
 
-    <section>
-      <p>статья и новости</p>
-      <h2>Все самое интерестное</h2>
-      <ul>
-        <li>
+    <section class="article">
+      <div class="container">
+      <p class="little-title">статья и новости</p>
+      <h2 class="caption">Все самое интерестное</h2>
+
+      <ul class="article-list list">
+        <li class="article-list-item">
+          <div class="image-block">
           <p>новости</p>
-          <div>
             <img src="./images/interest/123.jpg" alt="news" />
           </div>
-          <div>
-            <p>21. 03. 2020</p>
-            <h3>Уникальная услуга «вывеска в аренду»</h3>
+          <div class="desctiption">
+            <p class="data">21. 03. 2020</p>
+            <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
             <p>
               У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
               рекламе.
             </p>
-            <button type="button"></button>
+            <button type="button">&#8594;подробнее</button>
           </div>
         </li>
-        <li>
+
+        <li class="article-list-item">
+          <div class="image-block">
           <p>новости</p>
-          <div>
             <img src="./images/interest/123.jpg" alt="news" />
           </div>
-          <div>
-            <p>21. 03. 2020</p>
-            <h3>Уникальная услуга «вывеска в аренду»</h3>
+          <div class="desctiption">
+            <p class="data">21. 03. 2020</p>
+            <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
             <p>
               У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
               рекламе.
             </p>
-            <button type="button"></button>
+            <button type="button">&#8594; подробнее</button>
           </div>
         </li>
-        <li>
+        <li class="article-list-item">
+          <div class="image-block">
           <p>новости</p>
-          <div>
             <img src="./images/interest/123.jpg" alt="news" />
           </div>
-          <div>
-            <p>21. 03. 2020</p>
-            <h3>Уникальная услуга «вывеска в аренду»</h3>
+          <div class="desctiption">
+            <p class="data">21. 03. 2020</p>
+            <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
             <p>
               У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
               рекламе.
             </p>
-            <button type="button"></button>
+            <button type="button">&#8594;подробнее</button>
           </div>
         </li>
       </ul>
       <!--    кнопка все статьи   -->
       <a href="./html/posts.html">все статьи</a>
+      </div>
     </section>
 
     <footer>
