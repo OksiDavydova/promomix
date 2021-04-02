@@ -14,7 +14,11 @@
       <nav class="navigation container">
         <a href="/" class="logo"><img src="./images/logo.jpg" alt="" /></a>
         <ul class="list">
-          <li class="list-item"><img src="./icon/bx-search.svg.svg" alt="" /><button type="button">поиск</button></li>
+          <li class="list-item icon"><button type="button">
+            <svg class="icon-search" width="16" height="16">
+              <use href="./icon/icons.svg#search"></use>
+            </svg>
+            поиск</button></li>
           <li class="list-item"><a href="tel:84964290900" class="link">8 496 429 09 00</a></li>
           <li class="list-item"><button type="button">оставить заявку</button></li>
         </ul>
@@ -23,14 +27,14 @@
     <section class="hero">
       <div class="container">
         <h1>
-          Promomix – <br />
+          <span>Promomix –</span>  <br />
           рекламное агентство <br />
           полного цикла
         </h1>
         <ul class="social-list list">
-          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
-          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Vkontakte</li>
-          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer"></a>Twitter</li>
+          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer">Vkontakte</a></li>
+          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
         </ul>
       </div>
     </section>
@@ -230,87 +234,97 @@
         <li class="article-list-item">
           <div class="image-block">
           <p>новости</p>
-            <img src="./images/interest/123.jpg" alt="news" />
+            <img src="./images/interest/123.jpg" alt="news" width="420" height="236"/>
           </div>
           <div class="desctiption">
             <p class="data">21. 03. 2020</p>
             <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
-            <p>
+            <p class="paragraph">
               У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
               рекламе.
             </p>
-            <button type="button">&#8594;подробнее</button>
+            <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
           </div>
         </li>
 
         <li class="article-list-item">
           <div class="image-block">
           <p>новости</p>
-            <img src="./images/interest/123.jpg" alt="news" />
+            <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
           </div>
           <div class="desctiption">
             <p class="data">21. 03. 2020</p>
             <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
-            <p>
+            <p class="paragraph">
               У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
               рекламе.
             </p>
-            <button type="button">&#8594; подробнее</button>
+            <button class="article-btn" type="button"> <span> &#8594;</span> подробнее</button>
           </div>
         </li>
         <li class="article-list-item">
           <div class="image-block">
           <p>новости</p>
-            <img src="./images/interest/123.jpg" alt="news" />
+            <img src="./images/interest/123.jpg" alt="news" width="420" height="236"/>
           </div>
           <div class="desctiption">
             <p class="data">21. 03. 2020</p>
             <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
-            <p>
+            <p class="paragraph">
               У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
               рекламе.
             </p>
-            <button type="button">&#8594;подробнее</button>
+            <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
           </div>
         </li>
       </ul>
+
       <!--    кнопка все статьи   -->
-      <a href="./html/posts.html">все статьи</a>
+        <button class="button-all" type="button">
+          <span class="plus">&#43</span> 
+          <span class="line">все статьи </span>
+        </button>
+    
       </div>
     </section>
 
-    <footer>
-      <div>
-        <div>
-          <a href="">Promomix – рекламное агентство полного цикла</a>
-          <button type="button">оставить заявку</button>
+    <footer class="footer">
+      <div class="container footer-bg">
+        <div class="footer-title part">
+          <h2 class="foot-headline"><span class="part">Promomix – </span> <br> 
+            рекламное агентство <br> 
+            полного цикла</h2>
+          <button class="button" type="button">оставить заявку</button>
         </div>
-        <nav>
-          <ul>
-            <li>
+
+        <nav class="footer-nav part">
+          <ul class="footer-nav-list list">
+            <li class="footer-nav-item">
               <a href="./html/obout.html">О компании</a>
             </li>
-            <li>
+            <li class="footer-nav-item">
               <a href="./html/features.html">Услуги</a>
             </li>
-            <li>
+            <li class="footer-nav-item">
               <a href="./html/works.html">Наши работы</a>
             </li>
-            <li>
+            <li class="footer-nav-item">
               <a href="./html/services.html">Сервис</a>
             </li>
-            <li>
+            <li class="footer-nav-item">
               <a href="./html/complex.html">Комплексные решения</a>
             </li>
-            <li>
+            <li class="footer-nav-item">
               <a href="./html/stores.html">Статьи и новости</a>
             </li>
-            <li>
+            <li class="footer-nav-item">
               <a href="/">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div>
+
+
+        <div class="footer-email part">
           <p>Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу рассылку.</p>
           <!--поле для ввода e-mail-->
           <form>
@@ -320,12 +334,15 @@
           </form>
         </div>
       </div>
-      <div>
+
+
+      <div class="container copyright">
         <p>&copy;2011 - 2020 Promomix</p>
-        <ul>
-          <li><a href="" target="_blank" rel="noopener noreferrer"></a>Facebook</li>
-          <li><a href="" target="_blank" rel="noopener noreferrer"></a>Vkontakte</li>
-          <li><a href="" target="_blank" rel="noopener noreferrer"></a>Twitter</li>
+
+        <ul class="copy-list list">
+          <li class="copy-list-item"><a href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li class="copy-list-item"><a href="" target="_blank" rel="noopener noreferrer">Vkontakte</a></li>
+          <li class="copy-list-item"><a href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
         </ul>
       </div>
     </footer>

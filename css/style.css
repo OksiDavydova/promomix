@@ -15,7 +15,7 @@ body {
   line-height: 1;
 }
 .header {
-  background-color: #fff;
+  background-color: var(--main-white);
 }
 
 .container {
@@ -63,7 +63,15 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus,
+.navigation .link:hover,
+.navigation .link:focus,
+.footer-nav-list a:hover,
+.footer-nav-list a:focus,
+.copy-list a:hover,
+.copy-list a:focus,
+.social-list a:hover,
+.social-list a:focus {
   color: var(--main-red);
 }
 .list-item img {
@@ -86,6 +94,15 @@ button:focus {
 .navigation .list-item:nth-child(2) {
   font-size: 15px;
 }
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-search {
+  fill: currentColor;
+}
+
 .hero .container {
   padding-top: 568px;
   padding-bottom: 70px;
@@ -162,7 +179,12 @@ button:focus {
   flex-basis: calc((100% - 180px) / 4);
   margin-right: 60px;
   margin-bottom: 60px;
+
   min-height: 255px;
+
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.32;
 }
 
 .list .key-areas-item:nth-child(4n) {
@@ -172,22 +194,22 @@ button:focus {
 .list .key-areas-item:nth-last-child(-n + 4) {
   margin-bottom: 0px;
 }
+
 .key-areas-link {
+  display: flex;
+  flex-direction: column;
   padding-left: 40px;
   padding-top: 40px;
-  padding-bottom: 42px;
   padding-right: 40px;
-
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 1.32;
+  height: 255px;
 }
 
 .key-areas-item p {
   margin-top: 53px;
 }
-.key-areas-item:hover,
-.key-areas-item:focus {
+
+.key-areas-link:hover,
+.key-areas-link:focus {
   background-color: #e52322;
   color: #ffffff;
 }
@@ -195,14 +217,14 @@ button:focus {
 .key-areas-link:hover .icon,
 .key-areas-link:focus .icon {
   fill: #ffffff;
-  background-color: #e52322;
-  color: #ffffff;
+  /* background-color: #e52322;
+  color: #ffffff; */
 }
 
 /* -----Наши преимущества----*/
 .benefits {
   margin-top: 200px;
-  background-color: #f2f4f7;
+  background-color: var(--background-color);
 }
 
 .benefits .benefits-part {
@@ -320,10 +342,11 @@ button:focus {
   padding-bottom: 100px;
 }
 
-.works .button-all {
+.button-all {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
   border-style: none;
   background-color: #fff;
 
@@ -352,7 +375,7 @@ button:focus {
 /*--------partners--------*/
 .partners {
   margin-top: 200px;
-  background-color: #f2f4f7;
+  background-color: var(--background-color);
 }
 
 .partners .flexbox {
@@ -410,4 +433,119 @@ button:focus {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
+}
+
+.desctiption .data {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  color: #b0b6bf;
+}
+
+.desctiption .desc-headline {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 1.3;
+}
+.desctiption .paragraph {
+  margin-bottom: 64px;
+
+  line-height: 1.5;
+}
+
+.article-btn {
+  padding: 10px 0 10px 0;
+  border-style: none;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  max-width: 100px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/*----------footer-----------*/
+.footer {
+  margin-top: 200px;
+
+  color: #1f2c37;
+}
+.footer-bg {
+  display: flex;
+  background-color: var(--background-color);
+  padding-top: 107px;
+  padding-bottom: 100px;
+}
+
+.footer-bg .part {
+  margin-right: 60px;
+}
+
+.footer-bg .part:nth-child(n + 3) {
+  margin-right: 0;
+}
+
+.footer-title {
+  width: 570px;
+}
+
+.foot-headline {
+  margin-bottom: 62px;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.foot-headline .part {
+  color: var(--main-red);
+}
+
+.footer-title .button {
+  letter-spacing: 0.05em;
+  padding: 22px 44px 21px 44px;
+  border: 1px solid var(--main-red);
+}
+
+.footer-nav {
+  width: 255px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav-item {
+  margin-bottom: 18px;
+}
+.footer-nav-item:nth-child(7n) {
+  margin-bottom: 0px;
+}
+
+.footer-email {
+  width: 255px;
+}
+.footer-email p {
+  margin-bottom: 64px;
+  line-height: 1.5;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  font-size: 14px;
+}
+.copy-list {
+  display: inline-flex;
+}
+
+.copy-list-item {
+  margin-right: 33px;
+}
+
+.copy-list-item:nth-child(3n) {
+  margin-right: 0;
 }
