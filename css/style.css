@@ -35,16 +35,13 @@ body {
   margin-left: auto;
   align-items: center;
 }
+
 .logo,
 .list-item button,
 .list-item a {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
-/* .features li:nth-child(2n + 2) {
-  border: 1px solid black;
-} */
 
 .list-item:not(:last-child) {
   margin-right: 120px;
@@ -164,6 +161,7 @@ button:focus,
 .caption-part {
   color: #e52322;
 }
+
 .icon-size {
   width: 70px;
   height: 70px;
@@ -363,7 +361,7 @@ button:focus,
   margin-top: 17px;
   margin-bottom: 20px;
   background-color: currentColor;
-  margin-right: 48px;
+  margin-right: 40px;
 }
 
 .plus {
