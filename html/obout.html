@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Fonts/stylesheet.css" />
     <link rel="stylesheet" href="../css/modern-normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/style-about.css" />
     <title>about</title>
   </head>
@@ -206,112 +207,157 @@
         </div>
       </section>
 
-      <section>
-        <h2>обоорудование</h2>
-        <table>
-          <tr>
-            <td>01</td>
-            <td>Фрезерный станок <img src="../images/equipment/shtalmark.jpg" alt="станок" width="570" height="343" /></td>
-            <td>
+      <section class="equipment">
+        <div class="container box">
+          <h2 class="caption">Оборудование</h2>
+
+          <button class="collapsible"><span class="number">01</span>Фрезерный станок <span class="content-title">Shtalmark M3-2040</span></button>
+          <div class="content">
+            <img src="../images/equipment/shtalmark.jpg" alt="станок" width="570" height="343" />
+            <div class="content-text">
               <span>Shtalmark M3-2040</span>
               <p>
                 Это надежный фрезер-раскойщик, в первую очередь, востребованный в рекламной отрасли. Станок способен выполнять любые задачи: резку,
                 точную гравировку, 3D-обработку. Shtalmark M3-2040 - станок больших возможностей. Он может обрабатывать не только дерево, пластик, но
                 и искусственный камень и цветные металлы.
               </p>
-            </td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Cублимационный плоттер <img src="../images/equipment/roland-texart.jpg" alt="оборудование" width="570" height="343" /></td>
-            <td>
+            </div>
+          </div>
+
+          <button class="collapsible"><span class="number">02</span>Cублимационный плоттер</button>
+          <div class="content">
+            <img src="../images/equipment/roland-texart.jpg" alt="станок" width="570" height="343" />
+            <div class="content-text">
               <span>Roland</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, alias?</p>
-            </td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Принтер <img src="../images/equipment/konica-minolta.jpg" alt="оборудование" width="570" height="343" /></td>
-            <td>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, alias?
+              </p>
+            </div>
+          </div>
+
+          <button class="collapsible"><span class="number">03</span>Принтер</button>
+          <div class="content">
+            <img src="../images/equipment/konica-minolta.jpg" alt="станок" width="570" height="343" />
+            <div class="content-text">
               <span>Konica Minolta</span>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, molestiae.</p>
-            </td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>04</td>
-            <td>Плоттер-каттер <img src="../images/equipment/roland-vs.jpg" alt="оборудование" width="570" height="343" /></td>
-            <td>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, alias?
+              </p>
+            </div>
+          </div>
+
+          <button class="collapsible"><span class="number">04</span>Плоттер-каттер</button>
+          <div class="content">
+            <img src="../images/equipment/roland-vs.jpg" alt="станок" width="570" height="343" />
+            <div class="content-text">
               <span>Roland</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate.</p>
-            </td>
-            <td>+</td>
-          </tr>
-          <tr>
-            <td>05</td>
-            <td>Сольвентный плоттер<img src="../images/equipment/mimaki-swj.jpg" alt="оборудование" width="570" height="343" /></td>
-            <td>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, alias?
+              </p>
+            </div>
+          </div>
+
+          <button class="collapsible"><span class="number">05</span>Сольвентный плоттер</button>
+          <div class="content">
+            <img src="../images/equipment/mimaki-swj.jpg" alt="станок" width="570" height="343" />
+            <div class="content-text">
               <span>Mimaki</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate.</p>
-            </td>
-            <td>+</td>
-          </tr>
-        </table>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, alias?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <img src="../images/works/w1.jpg" alt="вывеска" width="570" height="370" />
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
-          </li>
-          <li>
-            <img src="../images/works/w2.jpg" alt="вывеска" width="570" height="570" />
-            <h3>Bio бутик Flora</h3>
-            <p>наружная реклама</p>
-          </li>
-          <li>
-            <img src="../images/works/w3.jpg" alt="вывеска" width="570" height="370" />
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
-          </li>
-          <li>
-            <img src="../images/works/w4.jpg" alt="вывеска" width="570" height="570" />
-            <h3>Сеть ресторанов Emosi</h3>
-            <p>Вывеска объемная</p>
-          </li>
-          <li>
-            <img src="../images/works/w5.jpg" alt="вывеска" width="570" height="370" />
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
-          </li>
-          <li>
-            <img src="../images/works/w6.jpg" alt="вывеска" width="570" height="570" />
-            <h3>Кафе Starbucks Coffee</h3>
-            <p>Вывеска объемная</p>
-          </li>
-        </ul>
+      <section class="works">
+        <div class="container">
+          <p class="little-title">наши работы</p>
+          <h2 class="caption">Воплощаем идеи</h2>
+          <ul class="works-list list">
+            <li class="works-list-item">
+              <img src="../images/works/w1.jpg" alt="вывеска" width="360" height="270" />
+              <div class="work-item-signature">
+                <h3>Кафе Starbucks Coffee</h3>
+                <p>Вывеска объемная</p>
+              </div>
+            </li>
+            <li class="works-list-item">
+              <img src="../images/works/w3.jpg" alt="вывеска" width="360" height="360" />
+              <div class="work-item-signature">
+                <h3>Кафе Starbucks Coffee</h3>
+                <p>Вывеска объемная</p>
+              </div>
+            </li>
+            <li class="works-list-item">
+              <img src="../images/works/w6.jpg" alt="вывеска" width="360" height="270" />
+              <div class="work-item-signature">
+                <h3>Кафе Starbucks Coffee</h3>
+                <p>Вывеска объемная</p>
+              </div>
+            </li>
+            <li class="works-list-item">
+              <img src="../images/works/w2.jpg" alt="вывеска" width="360" height="360" />
+              <div class="work-item-signature">
+                <h3>Bio бутик Flora</h3>
+                <p>наружная реклама</p>
+              </div>
+            </li>
 
-        <!--our works-->
-        <button type="button">все работы</button>
+            <li class="works-list-item">
+              <img src="../images/works/w4.jpg" alt="вывеска" width="360" height="270" />
+              <div class="work-item-signature">
+                <h3>Сеть ресторанов Emosi</h3>
+                <p>Вывеска объемная</p>
+              </div>
+            </li>
+            <li class="works-list-item">
+              <img src="../images/works/w5.jpg" alt="вывеска" width="360" height="360" />
+              <div class="work-item-signature">
+                <h3>Кафе Starbucks Coffee</h3>
+                <p>Вывеска объемная</p>
+              </div>
+            </li>
+          </ul>
+
+          <!--our works-->
+          <a href="/" class="all">
+            <img src="../images/plus.svg" alt="" />
+            <p>Все работы</p>
+          </a>
+        </div>
       </section>
 
       <section class="order">
         <div class="container order-box">
-          <div class="order-caption">
+          <div class="order-item">
             <h2 class="caption">Заявка</h2>
             <p class="order-text">Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время</p>
           </div>
 
-          <div>
+          <div class="order-item">
             <form class="order-form">
-              <input type="text" placeholder="Имя" />
-              <input type="tel" placeholder="Телефон" />
-              <input type="text" placeholder="Комментарий к заявке" />
-              <input type="email" placeholder="Ваш e-mail" />
+              <input class="form-input" type="text" placeholder="Имя" />
+              <input class="form-input" type="tel" placeholder="Телефон" />
+              <input class="form-input" type="text" placeholder="Комментарий к заявке" />
+              <input class="form-input" type="email" placeholder="Ваш e-mail" />
               <!--<input type="submit" placeholder="&#8594;">-->
               <button type="submit">отправить</button>
               <span>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</span>

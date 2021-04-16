@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>promomix</title>
   </head>
   <body>
@@ -14,11 +15,14 @@
       <nav class="navigation container">
         <a href="/" class="logo"><img src="./images/logo.jpg" alt="" /></a>
         <ul class="list">
-          <li class="list-item icon"><button type="button">
-            <svg class="icon-search" width="16" height="16">
-              <use href="./icon/icons.svg#search"></use>
-            </svg>
-            поиск</button></li>
+          <li class="list-item icon">
+            <button type="button">
+              <svg class="icon-search" width="16" height="16">
+                <use href="./icon/icons.svg#search"></use>
+              </svg>
+              поиск
+            </button>
+          </li>
           <li class="list-item"><a href="tel:84964290900" class="link">8 496 429 09 00</a></li>
           <li class="list-item"><button type="button">оставить заявку</button></li>
         </ul>
@@ -27,7 +31,7 @@
     <section class="hero">
       <div class="container">
         <h1>
-          <span>Promomix –</span>  <br />
+          <span>Promomix –</span> <br />
           рекламное агентство <br />
           полного цикла
         </h1>
@@ -117,8 +121,8 @@
         <div class="benefits-part">
           <p class="little-title">Наши преимущества</p>
           <h2 class="caption">
-            <span class="caption-part">Создаем рекламу</span> <br />
-            и формируем имидж <br />
+            <span class="caption-part">Создаем рекламу</span>
+            <span class="caption-part-second">и формируем имидж</span>
             компаний
           </h2>
         </div>
@@ -196,104 +200,130 @@
         </ul>
 
         <!--our works-->
-        
-        <button class="button-all" type="button">
-          <!-- <span class="plus">&#43</span>  -->
-          <span class="line">все работы</span>
-        </button>
+
+        <a href="./html/works.html" class="all">
+          <img src="./images/plus.svg" alt="" />
+          <p>Все работы</p>
+        </a>
       </div>
     </section>
 
     <section class="partners">
       <div class="container flexbox">
-        <div class="partners-part">
+        <div class="partner-part">
           <p class="little-title">Наши партнёры</p>
-          <h2 class="caption">400+ компаний доверяют нам</h2>
+          <h2 class="caption">
+            <span class="caption-part">400+ <span class="caption-black"> компаний</span></span>
+            доверяют нам
+          </h2>
         </div>
 
-        <ul class="partners-list list">
-          <li class="partners-list-item"><img src="./images/brends/logo1.jpg" alt="puma" width="124" height="64" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo2.jpg" alt="тинькофф" width="134" height="73" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo3.jpg" alt="ашан" width="113" height="35" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo4.jpg" alt="lukoil" width="139" height="48" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo5.jpg" alt="nike" width="100" height="54" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo6.jpg" alt="zara" width="106" height="45" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo7.jpg" alt="addidas" width="102" height="68" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo8.jpg" alt="o'stin" width="153" height="46" /></li>
-          <li class="partners-list-item"><img src="./images/brends/logo9.jpg" alt="назпром" width="124" height="60" /></li>
+        <ul class="partner-part partners-list list">
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/puma.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/tincof.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/ashan.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/lukoil.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/nike.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/zara.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/Adidas.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/OSTIN.png" alt="" /></a>
+          </li>
+          <li class="partner-list-item">
+            <a href=""><img src="./images/brends/gazprom.png" alt="" /></a>
+          </li>
         </ul>
       </div>
     </section>
 
     <section class="article">
       <div class="container">
-      <p class="little-title">статья и новости</p>
-      <h2 class="caption">Все самое интерестное</h2>
+        <p class="little-title">статья и новости</p>
+        <h2 class="caption">Все самое интерестное</h2>
 
-      <ul class="article-list list">
-        <li class="article-list-item">
-          <div class="image-block">
-          <p>новости</p>
-            <img src="./images/interest/123.jpg" alt="news" width="420" height="236"/>
-          </div>
-          <div class="desctiption">
-            <p class="data">21. 03. 2020</p>
-            <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
-            <p class="paragraph">
-              У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
-              рекламе.
-            </p>
-            <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
-          </div>
-        </li>
+        <ul class="article-list list">
+          <li class="article-list-item">
+            <div class="image-block">
+              <p>новости</p>
+              <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
+            </div>
+            <div class="desctiption">
+              <p class="data">21. 03. 2020</p>
+              <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
+              <p class="paragraph">
+                У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
+                рекламе.
+              </p>
+              <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
+            </div>
+          </li>
 
-        <li class="article-list-item">
-          <div class="image-block">
-          <p>новости</p>
-            <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
-          </div>
-          <div class="desctiption">
-            <p class="data">21. 03. 2020</p>
-            <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
-            <p class="paragraph">
-              У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
-              рекламе.
-            </p>
-            <button class="article-btn" type="button"> <span> &#8594;</span> подробнее</button>
-          </div>
-        </li>
-        <li class="article-list-item">
-          <div class="image-block">
-          <p>новости</p>
-            <img src="./images/interest/123.jpg" alt="news" width="420" height="236"/>
-          </div>
-          <div class="desctiption">
-            <p class="data">21. 03. 2020</p>
-            <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
-            <p class="paragraph">
-              У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
-              рекламе.
-            </p>
-            <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
-          </div>
-        </li>
-      </ul>
+          <li class="article-list-item">
+            <div class="image-block">
+              <p>новости</p>
+              <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
+            </div>
+            <div class="desctiption">
+              <p class="data">21. 03. 2020</p>
+              <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
+              <p class="paragraph">
+                У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
+                рекламе.
+              </p>
+              <button class="article-btn" type="button"><span> &#8594;</span> подробнее</button>
+            </div>
+          </li>
+          <li class="article-list-item">
+            <div class="image-block">
+              <p>новости</p>
+              <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
+            </div>
+            <div class="desctiption">
+              <p class="data">21. 03. 2020</p>
+              <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
+              <p class="paragraph">
+                У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
+                рекламе.
+              </p>
+              <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
+            </div>
+          </li>
+        </ul>
 
-      <!--    кнопка все статьи   -->
-        <button class="button-all" type="button">
-          <span class="plus">&#43</span> 
-          <span class="line">все статьи </span>
-        </button>
-    
+        <!--    кнопка все статьи   -->
+
+        <a href="./html/works.html" class="all">
+          <img src="./images/plus.svg" alt="" />
+          <p>Все статьи</p>
+        </a>
+        <!-- <button class="button-all line plus" type="button">
+          все статьи
+        </button> -->
       </div>
     </section>
 
     <footer class="footer">
       <div class="container footer-bg">
         <div class="footer-title part">
-          <h2 class="foot-headline"><span class="part">Promomix – </span> <br> 
-            рекламное агентство <br> 
-            полного цикла</h2>
+          <h2 class="foot-headline">
+            <span class="part">Promomix – </span> <br />
+            рекламное агентство <br />
+            полного цикла
+          </h2>
           <button class="button" type="button">оставить заявку</button>
         </div>
 
@@ -323,18 +353,16 @@
           </ul>
         </nav>
 
-
         <div class="footer-email part">
           <p>Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу рассылку.</p>
           <!--поле для ввода e-mail-->
-          <form>
+          <form class="footer-form">
             <input type="email" placeholder="Ваш e-mail" />
             <!--<input type="submit" placeholder="&#8594;">-->
             <button type="submit">&#8594;</button>
           </form>
         </div>
       </div>
-
 
       <div class="container copyright">
         <p>&copy;2011 - 2020 Promomix</p>

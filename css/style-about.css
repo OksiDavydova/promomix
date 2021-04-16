@@ -353,22 +353,129 @@ button:focus,
   margin-bottom: 0px;
 }
 
-/*------------order------------*/
+/*---------equipment--------------------------------------------------------*/
+.equipment {
+  margin-top: 200px;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  /* padding: 18px; */
+  padding-top: 27px;
+  padding-bottom: 33px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-top: 1px solid #b0b6bf;
+}
+.collapsible .number {
+  margin-right: 70px;
+  font-size: 16px;
+  color: #b0b6bf;
+}
+
+.equipment .content-title {
+  margin-left: 355px;
+  font-size: 16px;
+  line-height: 1;
+  color: #b0b6bf;
+}
+
+.active,
+.collapsible:hover,
+.collapsible:focus,
+.collapsible:hover .content-title,
+.collapsible:focus .content-title,
+.collapsible:hover .number,
+.collapsible:focus .number,
+.collapsible:hover::after {
+  background-color: white;
+  color: var(--main-red);
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: var(--main-black);
+  font-weight: bold;
+  float: right;
+  margin-right: 20px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--main-white);
+  position: relative;
+}
+
+.equipment .content-text {
+  position: absolute;
+  width: 550px;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.content-text p {
+  margin-top: 20px;
+}
+
+/*====================works=================*/
+.works-list {
+  display: inline-flex;
+}
+/*------------order----------------*/
 .order {
   margin-top: 200px;
   margin-bottom: 200px;
 }
+.order .caption {
+  padding-bottom: 34px;
+}
+.order-text {
+  width: 340px;
+  font-size: 20px;
+  line-height: 1.4;
+}
 
 .order-box {
   display: flex;
+  justify-content: space-between;
 }
 
-.order-caption {
-  width: 570px;
-  margin-right: 60px;
+.order-item {
+  flex-basis: calc(100% / 2);
+  /* margin-right: 60px; */
 }
 
 .order-form {
   display: flex;
   flex-direction: column;
+}
+
+.order .form-input {
+  border: none;
+  background-color: #fff;
+  height: 80px;
+  font-size: 20px;
+  line-height: 1.4;
+  border-bottom: 1px solid #b0b6bf;
+}
+
+.form-input::placeholder {
+  color: #1f2c37;
+  font-size: 18px;
+  line-height: 1;
 }
