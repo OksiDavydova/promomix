@@ -357,10 +357,15 @@
               <input class="form-input" type="text" placeholder="Имя" />
               <input class="form-input" type="tel" placeholder="Телефон" />
               <input class="form-input" type="text" placeholder="Комментарий к заявке" />
-              <input class="form-input" type="email" placeholder="Ваш e-mail" />
+              <div>
+                <input class="form-input inputfile" type="file" id="file" accept="image/png, image/jpeg" />
+                <label for="file">Прикрепить файл</label>
+              </div>
               <!--<input type="submit" placeholder="&#8594;">-->
-              <button type="submit">отправить</button>
-              <span>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</span>
+              <div class="box">
+                <button class="button" type="submit">отправить</button>
+                <span class="text-accept">Нажимая «Отправить» вы даёте согласие на обработку персональных данных</span>
+              </div>
             </form>
           </div>
         </div>
