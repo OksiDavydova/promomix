@@ -42,8 +42,8 @@ button:hover,
 button:focus,
 .navigation .link:hover,
 .navigation .link:focus,
-.footer-nav-list a:hover,
-.footer-nav-list a:focus,
+.navigation-list a:hover,
+.navigation-list a:focus,
 .copy-list a:hover,
 .copy-list a:focus,
 .social-list a:hover,
@@ -377,108 +377,9 @@ button:focus,
 }
 
 /*====================works=================*/
+/*галерея ????????????*/
 .works-list {
   display: inline-flex;
 }
-/*------------order----------------*/
-.order {
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-.order .caption {
-  padding-bottom: 34px;
-}
-.order-text {
-  width: 340px;
-  font-size: 20px;
-  line-height: 1.4;
-}
-
-.order-box {
-  display: flex;
-  justify-content: space-between;
-}
-
-.order-item {
-  flex-basis: calc(100% / 2);
-  /* margin-right: 60px; */
-}
-
-.order-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.order .form-input {
-  font-family: var(--main-font);
-  border: none;
-  background-color: #fff;
-  /* height: 80px; */
-  font-size: 20px;
-  line-height: 1.4;
-  border-bottom: 1px solid #b0b6bf;
-  padding-top: 45px;
-  padding-bottom: 15px;
-}
-
-.form-input::placeholder {
-  color: var(--placeholder-text-color);
-  font-size: 18px;
-  line-height: 1;
-}
-.inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.inputfile + label {
-  padding: 34px 10px 9px 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
-  border-bottom: 1px solid #b0b6bf;
-  color: var(--main-black);
-  background-color: var(--main-white);
-  display: inline-block;
-  cursor: pointer;
-  transition: color 250ms linear;
-}
-
-.inputfile:focus + label,
-.inputfile + label:hover {
-  color: red;
-}
-
-.order-form .button {
-  margin-top: 42px;
-  background-color: var(--main-white);
-  border: 1px solid var(--button-border-color);
-  transition: color 250ms linear, background-color 250ms linear;
-}
-
-.order-form .button:hover,
-.order-form .button:focus {
-  color: var(--main-white);
-  background-color: var(--main-red);
-}
-.box {
-  display: inline-flex;
-}
-
-.order-form .text-accept {
-  display: block;
-  width: 274px;
-  margin-bottom: 0;
-  margin-top: 51px;
-  margin-left: 60px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1;
-  text-transform: none;
-  color: #b0b6bf;
-}
+/*------------order v main.css---------++++++++++++++++++++++++++++++++++++++++++-------*/
+/*=============footer-page v main.css=====================*/
