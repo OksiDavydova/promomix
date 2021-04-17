@@ -278,26 +278,6 @@
   margin-left: 48px;
   background-color: currentColor;
 }
-/* 
-.line::after {
-  content: "";
-  display: inline-flex;
-  width: 1000px;
-  height: 1px;
-  margin-top: 17px;
-  margin-bottom: 20px;
-  background-color: currentColor;
-  margin-right: 40px;
-} */
-
-/* .plus::before {
-  content: "\0002B";
-  left: 0px;
-  width: 23px;
-  height: 23px;
-  margin-right: 42px;
-  position: absolute;
-} */
 
 /*--------partners--------*/
 .partners {
