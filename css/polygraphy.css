@@ -1,0 +1,42 @@
+.icon-size {
+  width: 40px;
+  height: 40px;
+  fill: var(--main-red);
+}
+
+.key-areas {
+  display: flex;
+}
+
+.key-areas-item {
+  flex-basis: calc(100% / 8);
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.key-areas-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 23px;
+}
+
+.key-areas-item p {
+  display: block;
+  width: 90px;
+  margin-top: 53px;
+}
+
+.key-areas-link:hover,
+.key-areas-link:focus {
+  background-color: var(--main-red);
+  color: var(--main-white);
+}
+
+.key-areas-link:hover .icon,
+.key-areas-link:focus .icon {
+  fill: var(--main-white);
+}
