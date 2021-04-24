@@ -1,0 +1,121 @@
+.footer-page {
+  margin-top: 200px;
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 19%,
+    rgb(242, 244, 246) 21%,
+    rgb(242, 244, 246) 80%,
+    rgb(242, 244, 246) 100%
+  );
+}
+
+.footer-page__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 107px;
+  padding-bottom: 100px;
+}
+
+.footer-page__inner {
+  flex-basis: calc(100% / 2);
+}
+
+.footer-page__title {
+  display: block;
+  margin-bottom: 62px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.2;
+}
+/*+++++++button++++++++++*/
+.footer-page__button {
+  width: 230px;
+  margin-top: 64px;
+  background-color: transparent;
+}
+
+/*++++++++++++++++++++++++++++*/
+
+.footer-page__navigation {
+  display: flex;
+}
+
+.footer-page__navigation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-page__navigation-item {
+  margin-bottom: 18px;
+}
+
+.footer-page__navigation-item:nth-child(7n) {
+  margin-bottom: 0px;
+}
+/*=================================*/
+.footer-page__email {
+  margin-left: 144px;
+}
+
+.footer-page__form-input {
+  border: none;
+  background-color: transparent;
+}
+
+.footer-page__form-input::placeholder {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--placeholder-text-color);
+}
+.footer-page__email-text {
+  display: block;
+  width: 255px;
+  margin-bottom: 64px;
+  line-height: 1.5;
+}
+
+.footer-page__form {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-page__form-btn {
+  padding: 13px;
+  font-size: 20px;
+  background-color: transparent;
+  color: var(--main-black);
+  border: none;
+  transition: color 250ms linear;
+}
+
+.footer-page__form-btn:hover,
+.footer-page__form-btn:focus {
+  color: var(--main-red);
+}
+/*================footer-copyrigt====================*/
+.footer-copyrigt__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+}
+.footer-copyrigt__list {
+  display: inline-flex;
+}
+
+.footer-copyrigt__item {
+  margin-right: 33px;
+}
+
+.footer-copyrigt__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer-copyrigt__link {
+  padding-top: 43px;
+  padding-bottom: 43px;
+}

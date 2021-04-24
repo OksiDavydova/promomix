@@ -1,0 +1,153 @@
+@import "./utils/_modern-norm.scss";
+@import "./utils/__varibles.scss";
+
+@import "./base/_container.scss";
+@import "./components/grid";
+@import "./components/_page-header.scss";
+@import "./components/footer-page";
+@import "./components/section-title";
+@import "./components/_button.scss";
+
+@import "./layouts/feature";
+
+/*===========================================*/
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  border-style: none;
+  background-color: #fff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+.all {
+  position: relative;
+  /* right: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all img {
+  width: 23px;
+  height: 23px;
+  /* stroke: currentColor; */
+}
+
+.all::after {
+  position: absolute;
+  content: "";
+  display: inline-flex;
+  width: 1000px;
+  height: 1px;
+  margin-right: 48px;
+  margin-left: 48px;
+  background-color: currentColor;
+}
+/*------------order---------++++++++++++++++++++++++++++++++++++++++++-------*/
+.proposal {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.proposal .caption {
+  padding-bottom: 34px;
+}
+.proposal-text {
+  width: 340px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.proposal-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proposal-item {
+  flex-basis: calc(100% / 2);
+  /* margin-right: 60px; */
+}
+
+.proposal-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.proposal .form-input {
+  font-family: var(--main-font);
+  border: none;
+  background-color: #fff;
+  /* height: 80px; */
+  font-size: 20px;
+  line-height: 1.4;
+  border-bottom: 1px solid #b0b6bf;
+  padding-top: 45px;
+  padding-bottom: 15px;
+}
+
+.form-input::placeholder {
+  color: var(--placeholder-text-color);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  padding: 34px 10px 9px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  border-bottom: 1px solid #b0b6bf;
+  color: var(--main-black);
+  background-color: var(--main-white);
+  display: inline-block;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  color: red;
+}
+
+.proposal-form .button {
+  width: 230px;
+  margin-top: 42px;
+  background-color: var(--main-white);
+}
+
+.proposal-form .button:hover,
+.proposal-form .button:focus {
+  color: var(--main-white);
+  background-color: var(--main-red);
+}
+
+.proposal-form .text-accept {
+  padding: 0;
+  display: block;
+  width: 274px;
+  margin: 51px 6px 6px 60px;
+
+  /* margin-top: 51px;
+  margin-left: 60px; */
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: none;
+  color: #b0b6bf;
+}
+
+/*-------------footer-page--------++++++++++++++++++++++++++++++++++++++++++++--------*/

@@ -1,0 +1,85 @@
+/*=====================================*/
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+button {
+  text-transform: inherit;
+  font-weight: inherit;
+}
+
+.link:hover,
+.link:focus,
+.footer-nav-list a:hover,
+.footer-nav-list a:focus,
+.copy-list a:hover,
+.copy-list a:focus,
+.social-list a:hover,
+.social-list a:focus,
+a:hover,
+a:focus {
+  color: var(--main-red);
+}
+/*-------------------------------------------------*/
+
+/*--------gamburg---------*/
+
+/* #menu__toggle {
+  opacity: 0;
+}
+.header .span {
+  position: relative;
+  width: 14px;
+  height: 2px;
+
+  display: block;
+  background: var(--main-black);
+}
+.span::before,
+.span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  background: var(--main-black);
+}
+
+.span::before {
+  width: 24px;
+  top: -7px;
+}
+.span::after {
+  width: 24px;
+  top: 7px;
+}
+
+#menu__toggle:checked ~ .menu__btn .span {
+  background: transparent;
+}
+
+#menu__toggle:checked ~ .menu__btn .span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn .span::after {
+  transform: rotate(-45deg);
+  top: 0;
+} */
+
+/*=============================================*/

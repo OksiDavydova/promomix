@@ -1,0 +1,39 @@
+.icon-size {
+  width: 70px;
+  height: 70px;
+  fill: #e52322;
+}
+.feature-list {
+  --grid-num: 4;
+}
+
+.feature__link {
+  display: flex;
+  flex-direction: column;
+  min-height: 255px;
+  padding-left: 40px;
+  padding-top: 40px;
+
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.32;
+}
+
+.feature__text {
+  display: block;
+  max-width: 100px;
+  margin-top: 53px;
+}
+
+.feature__link:hover,
+.feature__link:focus {
+  background-color: #e52322;
+  color: #ffffff;
+}
+
+.feature__link:hover .icon,
+.feature__link:focus .icon {
+  fill: #ffffff;
+  /* background-color: #e52322;
+  color: #ffffff; */
+}

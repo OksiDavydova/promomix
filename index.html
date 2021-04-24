@@ -6,110 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Fonts/stylesheet.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <title>promomix</title>
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="navigation container">
-        <a href="/" class="logo"><img src="./images/logo.jpg" alt="" /></a>
-        <ul class="list">
-          <li class="list-item icon">
-            <button type="button">
-              <svg class="icon-search" width="16" height="16">
-                <use href="./icon/icons.svg#search"></use>
-              </svg>
-              поиск
-            </button>
-          </li>
-          <li class="list-item"><a href="tel:84964290900" class="link">8 496 429 09 00</a></li>
-          <li class="list-item"><button type="button">оставить заявку</button></li>
-        </ul>
-      </nav>
+    <header class="page-header" id="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="/"><img src="./images/logo.jpg" alt="" /></a>
+          <ul class="navigation__list list">
+            <li class="navigation__item icon">
+              <button class="navigation__button" type="button">
+                <svg class="icon-search icon" width="16" height="16">
+                  <use href="./icon/icons.svg#search"></use>
+                </svg>
+                поиск
+              </button>
+            </li>
+            <li class="navigation__item">
+              <a href="tel:84964290900" class="link">8 496 429 09 00</a>
+            </li>
+            <li class="navigation__item">
+              <button class="navigation__button" type="button">
+                оставить заявку
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="hero">
-      <div class="container">
+      <div class="container hero__container">
         <h1>
           <span>Promomix –</span> <br />
           рекламное агентство <br />
           полного цикла
         </h1>
         <ul class="social-list list">
-          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer">Vkontakte</a></li>
-          <li class="list-item"><a href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          <li class="list-item">
+            <a href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="list-item">
+            <a href="" target="_blank" rel="noopener noreferrer">Vkontakte</a>
+          </li>
+          <li class="list-item">
+            <a href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
         </ul>
       </div>
+
+      <div class="hero__sidebar">
+        <button class="humburger-menu__button button" type="button">
+          <!-- <svg class="icon" width="30" height="30">
+            <use href="./icon/close.svg"></use>
+          </svg> -->
+          <svg class="icon hero__icon" width="30" height="30">
+            <use href="./icon/sparow.svg"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="navigation-list list">
+        <li class="navigation-list-item">
+          <a href="./html/obout.html">О компании</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="./html/features.html">Услуги</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="./html/works.html">Наши работы</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="./html/services.html">Сервис</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="./html/complex.html">Комплексные решения</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="./html/stores.html">Статьи и новости</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="/">Контакты</a>
+        </li>
+      </ul>
     </section>
 
     <section class="features">
       <div class="container">
-        <p class="little-title">услуги</p>
-        <h2 class="caption">Ключевые <span class="caption-part">направления</span></h2>
-        <ul class="key-areas list">
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="/">
+        <p class="section-title--min">услуги</p>
+        <h2 class="section-title">
+          Ключевые <span class="section-title--red">направления</span>
+        </h2>
+        <ul class="grid list feature-list">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="/">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#cod"></use>
               </svg>
-              <p>Наружная реклама</p>
+              <p class="feature__text">Наружная реклама</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="/">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="/">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#print"></use>
               </svg>
-              <p>Широкоформатная печать</p>
+              <p class="feature__text">Широкоформатная печать</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="./html/polygraphy.html">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="./html/polygraphy.html">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#copy"></use>
               </svg>
-              <p>Рекламная полиграфия</p>
+              <p class="feature__text">Рекламная полиграфия</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="/">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="/">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#cap"></use>
               </svg>
-              <p>Сувенирная продукция</p>
+              <p class="feature__text">Сувенирная продукция</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="/">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="/">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#board"></use>
               </svg>
-              <p>Внутренняя реклама</p>
+              <p class="feature__text">Внутренняя реклама</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="./html/post-shirts.html">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="./html/post-shirts.html">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#shirts"></use>
               </svg>
-              <p>Брендирование одежды</p>
+              <p class="feature__text">Брендирование одежды</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="/">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="/">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#bus"></use>
               </svg>
-              <p>Брендирование транспорта</p>
+              <p class="feature__text">Брендирование транспорта</p>
             </a>
           </li>
-          <li class="key-areas-item">
-            <a class="key-areas-link" href="./html/features.html">
+          <li class="grid__item feature__item">
+            <a class="feature__link" href="./html/features.html">
               <svg class="icon icon-size">
                 <use href="./icon/icons.svg#arrow"></use>
               </svg>
-              <p>Все услуги</p>
+              <p class="feature__text">Все услуги</p>
             </a>
           </li>
         </ul>
@@ -119,9 +170,9 @@
     <section class="benefits">
       <div class="container">
         <div class="benefits-part">
-          <p class="little-title">Наши преимущества</p>
-          <h2 class="caption">
-            <span class="caption-part">Создаем рекламу</span>
+          <p class="section-title--min">Наши преимущества</p>
+          <h2 class="section-title">
+            <span class="section-title--red">Создаем рекламу</span>
             <span class="caption-part-second">и формируем имидж</span>
             компаний
           </h2>
@@ -150,33 +201,55 @@
 
     <section class="works">
       <div class="container">
-        <p class="little-title">наши работы</p>
-        <h2 class="caption">Воплощаем <span class="caption-part">идеи</span></h2>
+        <p class="section-title--min">наши работы</p>
+        <h2 class="section-title">
+          Воплощаем <span class="section-title--red">идеи</span>
+        </h2>
 
         <ul class="works-list list">
           <li class="works-list-item">
-            <img src="./images/works/w1.jpg" alt="вывеска" width="570" height="370" />
+            <img
+              src="./images/works/w1.jpg"
+              alt="вывеска"
+              width="570"
+              height="370"
+            />
             <div class="work-item-signature">
               <h3>Кафе Starbucks Coffee</h3>
               <p>Вывеска объемная</p>
             </div>
           </li>
           <li class="works-list-item">
-            <img src="./images/works/w3.jpg" alt="вывеска" width="570" height="370" />
+            <img
+              src="./images/works/w3.jpg"
+              alt="вывеска"
+              width="570"
+              height="370"
+            />
             <div class="work-item-signature">
               <h3>Кафе Starbucks Coffee</h3>
               <p>Вывеска объемная</p>
             </div>
           </li>
           <li class="works-list-item">
-            <img src="./images/works/w6.jpg" alt="вывеска" width="570" height="570" />
+            <img
+              src="./images/works/w6.jpg"
+              alt="вывеска"
+              width="570"
+              height="570"
+            />
             <div class="work-item-signature">
               <h3>Кафе Starbucks Coffee</h3>
               <p>Вывеска объемная</p>
             </div>
           </li>
           <li class="works-list-item">
-            <img src="./images/works/w2.jpg" alt="вывеска" width="570" height="570" />
+            <img
+              src="./images/works/w2.jpg"
+              alt="вывеска"
+              width="570"
+              height="570"
+            />
             <div class="work-item-signature">
               <h3>Bio бутик Flora</h3>
               <p>наружная реклама</p>
@@ -184,14 +257,24 @@
           </li>
 
           <li class="works-list-item">
-            <img src="./images/works/w4.jpg" alt="вывеска" width="570" height="570" />
+            <img
+              src="./images/works/w4.jpg"
+              alt="вывеска"
+              width="570"
+              height="570"
+            />
             <div class="work-item-signature">
               <h3>Сеть ресторанов Emosi</h3>
               <p>Вывеска объемная</p>
             </div>
           </li>
           <li class="works-list-item">
-            <img src="./images/works/w5.jpg" alt="вывеска" width="570" height="370" />
+            <img
+              src="./images/works/w5.jpg"
+              alt="вывеска"
+              width="570"
+              height="370"
+            />
             <div class="work-item-signature">
               <h3>Кафе Starbucks Coffee</h3>
               <p>Вывеска объемная</p>
@@ -211,9 +294,11 @@
     <section class="partners">
       <div class="container flexbox">
         <div class="partner-part">
-          <p class="little-title">Наши партнёры</p>
-          <h2 class="caption">
-            <span class="caption-part">400+ <span class="caption-black"> компаний</span></span>
+          <p class="section-title--min">Наши партнёры</p>
+          <h2 class="section-title">
+            <span class="section-title--red"
+              >400+ <span class="caption-black"> компаний</span></span
+            >
             доверяют нам
           </h2>
         </div>
@@ -252,54 +337,84 @@
 
     <section class="article">
       <div class="container">
-        <p class="little-title">статья и новости</p>
-        <h2 class="caption">Все самое интерестное</h2>
+        <p class="section-title--min">статья и новости</p>
+        <h2 class="section-title">Все самое интерестное</h2>
 
         <ul class="article-list list">
           <li class="article-list-item">
             <div class="image-block">
               <p>новости</p>
-              <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
+              <img
+                src="./images/interest/123.jpg"
+                alt="news"
+                width="420"
+                height="236"
+              />
             </div>
             <div class="desctiption">
               <p class="data">21. 03. 2020</p>
-              <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
+              <h3 class="desc-headline">
+                Уникальная услуга «вывеска в аренду»
+              </h3>
               <p class="paragraph">
-                У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
-                рекламе.
+                У владельца любого малого, но успешно развивающегося бизнеса
+                рано или поздно возникает необходимость в дополнительной
+                визуальной рекламе.
               </p>
-              <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
+              <button class="article-btn" type="button">
+                <span> &#8594;</span>подробнее
+              </button>
             </div>
           </li>
 
           <li class="article-list-item">
             <div class="image-block">
               <p>новости</p>
-              <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
+              <img
+                src="./images/interest/123.jpg"
+                alt="news"
+                width="420"
+                height="236"
+              />
             </div>
             <div class="desctiption">
               <p class="data">21. 03. 2020</p>
-              <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
+              <h3 class="desc-headline">
+                Уникальная услуга «вывеска в аренду»
+              </h3>
               <p class="paragraph">
-                У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
-                рекламе.
+                У владельца любого малого, но успешно развивающегося бизнеса
+                рано или поздно возникает необходимость в дополнительной
+                визуальной рекламе.
               </p>
-              <button class="article-btn" type="button"><span> &#8594;</span> подробнее</button>
+              <button class="article-btn" type="button">
+                <span> &#8594;</span> подробнее
+              </button>
             </div>
           </li>
           <li class="article-list-item">
             <div class="image-block">
               <p>новости</p>
-              <img src="./images/interest/123.jpg" alt="news" width="420" height="236" />
+              <img
+                src="./images/interest/123.jpg"
+                alt="news"
+                width="420"
+                height="236"
+              />
             </div>
             <div class="desctiption">
               <p class="data">21. 03. 2020</p>
-              <h3 class="desc-headline">Уникальная услуга «вывеска в аренду»</h3>
+              <h3 class="desc-headline">
+                Уникальная услуга «вывеска в аренду»
+              </h3>
               <p class="paragraph">
-                У владельца любого малого, но успешно развивающегося бизнеса рано или поздно возникает необходимость в дополнительной визуальной
-                рекламе.
+                У владельца любого малого, но успешно развивающегося бизнеса
+                рано или поздно возникает необходимость в дополнительной
+                визуальной рекламе.
               </p>
-              <button class="article-btn" type="button"><span> &#8594;</span>подробнее</button>
+              <button class="article-btn" type="button">
+                <span> &#8594;</span>подробнее
+              </button>
             </div>
           </li>
         </ul>
@@ -316,66 +431,101 @@
       </div>
     </section>
 
-    <section class="footer-page">
-      <div class="container footer-page-container">
-        <div class="footer-title">
-          <h2 class="footer-caption">
-            <span class="caption-part">Promomix – </span> <br />
+    <footer class="footer-page">
+      <div class="container footer-page__container">
+        <div class="footer-page__inner">
+          <h2 class="footer-page__title">
+            <span class="section-title--red">Promomix – </span> <br />
             рекламное агентство <br />
             полного цикла
           </h2>
-          <button class="button" type="button">оставить заявку</button>
+          <button class="button footer-page__button" type="button">
+            оставить заявку
+          </button>
         </div>
 
-        <div class="page-navigation">
+        <div class="footer-page__navigation">
           <nav>
-            <ul class="navigation-list list">
-              <li class="navigation-list-item">
+            <ul class="footer-page__navigation-list list">
+              <li class="footer-page__navigation-item">
                 <a href="./html/obout.html">О компании</a>
               </li>
-              <li class="navigation-list-item">
+              <li class="footer-page__navigation-item">
                 <a href="./html/features.html">Услуги</a>
               </li>
-              <li class="navigation-list-item">
+              <li class="footer-page__navigation-item">
                 <a href="./html/works.html">Наши работы</a>
               </li>
-              <li class="navigation-list-item">
+              <li class="footer-page__navigation-item">
                 <a href="./html/services.html">Сервис</a>
               </li>
-              <li class="navigation-list-item">
+              <li class="footer-page__navigation-item">
                 <a href="./html/complex.html">Комплексные решения</a>
               </li>
-              <li class="navigation-list-item">
+              <li class="footer-page__navigation-item">
                 <a href="./html/stores.html">Статьи и новости</a>
               </li>
-              <li class="navigation-list-item">
+              <li class="footer-page__navigation-item">
                 <a href="/">Контакты</a>
               </li>
             </ul>
           </nav>
 
-          <div class="page-email">
-            <p class="text">Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу рассылку.</p>
+          <div class="footer-page__email">
+            <p class="footer-page__email-text">
+              Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу
+              рассылку.
+            </p>
             <!--поле для ввода e-mail-->
-            <form class="page-form">
-              <input class="form-input" type="email" placeholder="Ваш e-mail" />
+            <form class="footer-page__form">
+              <input
+                class="footer-page__form-input"
+                type="email"
+                placeholder="Ваш e-mail"
+              />
               <!--<input type="submit" placeholder="&#8594;">-->
-              <button class="form-btn" type="submit">&#8594;</button>
+              <button class="footer-page__form-btn" type="submit">
+                &#8594;
+              </button>
             </form>
           </div>
         </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <div class="container copyright">
-        <p>&copy;2011 - 2020 Promomix</p>
+      <div class="footer-copyrigt">
+        <div class="container footer-copyrigt__container">
+          <p>&copy;2011 - 2020 Promomix</p>
 
-        <ul class="copy-list list">
-          <li class="copy-list-item"><a href="" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li class="copy-list-item"><a href="" target="_blank" rel="noopener noreferrer">Vkontakte</a></li>
-          <li class="copy-list-item"><a href="" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        </ul>
+          <ul class="footer-copyrigt__list list">
+            <li class="footer-copyrigt__item">
+              <a
+                class="footer-copyrigt__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="footer-copyrigt__item">
+              <a
+                class="footer-copyrigt__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Vkontakte</a
+              >
+            </li>
+            <li class="footer-copyrigt__item">
+              <a
+                class="footer-copyrigt__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
