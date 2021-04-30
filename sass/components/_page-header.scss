@@ -28,6 +28,11 @@
   border: none;
   cursor: pointer;
   font-size: 13px;
+
+  &:hover,
+  &:focus {
+    color: var(--main-red);
+  }
 }
 
 .navigation__item:first-child {
@@ -55,4 +60,17 @@
 .icon-search {
   margin-right: 12px;
   fill: currentColor;
+}
+/*=================*/
+.link:hover,
+.link:focus,
+.footer-nav-list a:hover,
+.footer-nav-list a:focus,
+.copy-list a:hover,
+.copy-list a:focus,
+.social-list a:hover,
+.social-list a:focus,
+a:hover,
+a:focus {
+  color: var(--main-red);
 }

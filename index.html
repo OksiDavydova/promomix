@@ -38,11 +38,12 @@
     </header>
     <section class="hero">
       <div class="container hero__container">
-        <h1>
-          <span>Promomix –</span> <br />
+        <h1 class="hero__title">
+          <span class="hero__title--color">Promomix –</span> <br />
           рекламное агентство <br />
           полного цикла
         </h1>
+
         <ul class="social-list list">
           <li class="list-item">
             <a href="" target="_blank" rel="noopener noreferrer">Facebook</a>
@@ -56,18 +57,18 @@
         </ul>
       </div>
 
-      <div class="hero__sidebar">
-        <button class="humburger-menu__button button" type="button">
-          <!-- <svg class="icon" width="30" height="30">
+      <!-- <div class="hero__sidebar">
+        <button class="humburger-menu__button button" type="button"> -->
+      <!-- <svg class="icon" width="30" height="30">
             <use href="./icon/close.svg"></use>
           </svg> -->
-          <svg class="icon hero__icon" width="30" height="30">
+      <!-- <svg class="icon hero__icon" width="30" height="30">
             <use href="./icon/sparow.svg"></use>
           </svg>
-        </button>
-      </div>
+        </button> 
+      </div>-->
 
-      <ul class="navigation-list list">
+      <!-- <ul class="navigation-list list">
         <li class="navigation-list-item">
           <a href="./html/obout.html">О компании</a>
         </li>
@@ -89,7 +90,7 @@
         <li class="navigation-list-item">
           <a href="/">Контакты</a>
         </li>
-      </ul>
+      </ul> -->
     </section>
 
     <section class="features">
@@ -168,32 +169,42 @@
     </section>
 
     <section class="benefits">
-      <div class="container">
-        <div class="benefits-part">
-          <p class="section-title--min">Наши преимущества</p>
+      <div class="container benefits__container">
+        <div class="benefits__part">
+          <p class="section-title--min">
+            Наши преимущества
+          </p>
           <h2 class="section-title">
-            <span class="section-title--red">Создаем рекламу</span>
+            <span class="section-title--red section-title--block"
+              >Создаем рекламу</span
+            >
             <span class="caption-part-second">и формируем имидж</span>
             компаний
           </h2>
         </div>
 
-        <ul class="benefits-list list">
-          <li class="benefits-item">
-            <p class="numbers">18+</p>
-            <p class="text decor-line">лет опыта на рекламном рынке</p>
+        <ul class="list benefits__list">
+          <li class="benefits__item">
+            <p class="benefits_numbers">18+</p>
+            <p class="benefits__text decor-line">
+              лет опыта на рекламном рынке
+            </p>
           </li>
-          <li class="benefits-item">
-            <p class="numbers">250+</p>
-            <p class="text decor-line">реализованных проектов</p>
+          <li class="benefits__item">
+            <p class="benefits_numbers">250+</p>
+            <p class="benefits__text decor-line">реализованных проектов</p>
           </li>
-          <li class="benefits-item">
-            <p class="numbers">37</p>
-            <p class="text decor-line">квалифицированных сотрудников</p>
+          <li class="benefits__item">
+            <p class="benefits_numbers">37</p>
+            <p class="benefits__text decor-line">
+              квалифицированных сотрудников
+            </p>
           </li>
-          <li class="benefits-item">
-            <p class="numbers">14+</p>
-            <p class="text decor-line">профессионального оборудования</p>
+          <li class="benefits__item">
+            <p class="benefits_numbers">14+</p>
+            <p class="benefits__text decor-line">
+              профессионального оборудования
+            </p>
           </li>
         </ul>
       </div>
@@ -206,79 +217,91 @@
           Воплощаем <span class="section-title--red">идеи</span>
         </h2>
 
-        <ul class="works-list list">
-          <li class="works-list-item">
-            <img
-              src="./images/works/w1.jpg"
-              alt="вывеска"
-              width="570"
-              height="370"
-            />
-            <div class="work-item-signature">
-              <h3>Кафе Starbucks Coffee</h3>
-              <p>Вывеска объемная</p>
-            </div>
+        <ul class="works__list list">
+          <li class="works__item">
+            <a href="">
+              <img
+                src="./images/works/w1.jpg"
+                alt="вывеска"
+                width="570"
+                height="370"
+              />
+              <div class="work__signature">
+                <h3 class="subhead">Кафе Starbucks Coffee</h3>
+                <p class="work__text">Вывеска объемная</p>
+              </div>
+            </a>
           </li>
-          <li class="works-list-item">
-            <img
-              src="./images/works/w3.jpg"
-              alt="вывеска"
-              width="570"
-              height="370"
-            />
-            <div class="work-item-signature">
-              <h3>Кафе Starbucks Coffee</h3>
-              <p>Вывеска объемная</p>
-            </div>
+          <li class="works__item">
+            <a href="">
+              <img
+                src="./images/works/w3.jpg"
+                alt="вывеска"
+                width="570"
+                height="370"
+              />
+              <div class="work__signature">
+                <h3 class="subhead">Кафе Starbucks Coffee</h3>
+                <p class="work__text">Вывеска объемная</p>
+              </div></a
+            >
           </li>
-          <li class="works-list-item">
-            <img
-              src="./images/works/w6.jpg"
-              alt="вывеска"
-              width="570"
-              height="570"
-            />
-            <div class="work-item-signature">
-              <h3>Кафе Starbucks Coffee</h3>
-              <p>Вывеска объемная</p>
-            </div>
+          <li class="works__item">
+            <a href="">
+              <img
+                src="./images/works/w6.jpg"
+                alt="вывеска"
+                width="570"
+                height="570"
+              />
+              <div class="work__signature">
+                <h3 class="subhead">Кафе Starbucks Coffee</h3>
+                <p class="work__text">Вывеска объемная</p>
+              </div></a
+            >
           </li>
-          <li class="works-list-item">
-            <img
-              src="./images/works/w2.jpg"
-              alt="вывеска"
-              width="570"
-              height="570"
-            />
-            <div class="work-item-signature">
-              <h3>Bio бутик Flora</h3>
-              <p>наружная реклама</p>
-            </div>
+          <li class="works__item">
+            <a href="">
+              <img
+                src="./images/works/w2.jpg"
+                alt="вывеска"
+                width="570"
+                height="570"
+              />
+              <div class="work__signature">
+                <h3 class="subhead">Bio бутик Flora</h3>
+                <p class="work__text">наружная реклама</p>
+              </div></a
+            >
           </li>
 
-          <li class="works-list-item">
-            <img
-              src="./images/works/w4.jpg"
-              alt="вывеска"
-              width="570"
-              height="570"
-            />
-            <div class="work-item-signature">
-              <h3>Сеть ресторанов Emosi</h3>
-              <p>Вывеска объемная</p>
-            </div>
+          <li class="works__item">
+            <a href="">
+              <img
+                src="./images/works/w4.jpg"
+                alt="вывеска"
+                width="570"
+                height="570"
+              />
+              <div class="work__signature">
+                <h3 class="subhead">Сеть ресторанов Emosi</h3>
+                <p class="work__text">Вывеска объемная</p>
+              </div></a
+            >
           </li>
-          <li class="works-list-item">
-            <img
-              src="./images/works/w5.jpg"
-              alt="вывеска"
-              width="570"
-              height="370"
-            />
-            <div class="work-item-signature">
-              <h3>Кафе Starbucks Coffee</h3>
-              <p>Вывеска объемная</p>
-            </div>
+          <li class="works__item">
+            <a href="">
+              <img
+                src="./images/works/w5.jpg"
+                alt="вывеска"
+                width="570"
+                height="370"
+              />
+              <div class="work__signature">
+                <h3 class="subhead">Кафе Starbucks Coffee</h3>
+                <p class="work__text">Вывеска объемная</p>
+              </div></a
+            >
           </li>
         </ul>
 
@@ -292,18 +315,19 @@
     </section>
 
     <section class="partners">
-      <div class="container flexbox">
+      <div class="container partners__container">
         <div class="partner-part">
           <p class="section-title--min">Наши партнёры</p>
           <h2 class="section-title">
-            <span class="section-title--red"
-              >400+ <span class="caption-black"> компаний</span></span
+            <span class="section-title--block">
+              <span class="section-title--red">400+</span>
+              компаний</span
             >
             доверяют нам
           </h2>
         </div>
 
-        <ul class="partner-part partners-list list">
+        <ul class="partners-list list">
           <li class="partner-list-item">
             <a href=""><img src="./images/brends/puma.png" alt="" /></a>
           </li>

@@ -8,6 +8,10 @@
     color: var(--main-red);
   }
 
+  &--block {
+    display: block;
+  }
+
   &--min {
     margin-bottom: 20px;
     font-size: 14px;

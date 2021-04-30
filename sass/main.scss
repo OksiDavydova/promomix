@@ -1,12 +1,17 @@
-@import "./utils/_modern-norm.scss";
-@import "./utils/__varibles.scss";
+@import "./utils/modern-norm";
+@import "./utils/varibles";
 
-@import "./base/_container.scss";
+@import "./base/container";
 @import "./components/grid";
-@import "./components/_page-header.scss";
+@import "./components/page-header";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/works";
+@import "./components/partners";
+
 @import "./components/footer-page";
 @import "./components/section-title";
-@import "./components/_button.scss";
+@import "./components/button";
 
 @import "./layouts/feature";
 
